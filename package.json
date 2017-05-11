@@ -9,5 +9,8 @@
     "start": "node server",
     "heroku-postbuild": "cd client/ && npm install --only=dev && npm install && npm run build"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
