@@ -18,8 +18,8 @@ export default class NavBar extends Component {
       <div className="container">
         <nav className="nav has-shadow">
           <div className="nav-left">
-            <Link className={(this.state.pageType === 'home') ? "nav-item is-active": "nav-item"} to="/">{`<Home />`}</Link>
-            <Link className={(this.state.pageType === 'contact') ? "nav-item is-active": "nav-item"} to="/contactme">
+            <Link className={(this.state.pageType === 'home') ? "nav-item is-active is-tab": "nav-item is-tab"} to="/">{`<Home />`}</Link>
+            <Link className={(this.state.pageType === 'contact') ? "nav-item is-active is-tab": "nav-item is-tab"} to="/contactme">
               {`<ContactMe />`}
             </Link>
           </div>
@@ -44,8 +44,8 @@ export default class NavBar extends Component {
           </span>
 
           <div className={(this.state.isMobile) ? 'nav-right nav-menu is-active' : 'nav-right nav-menu'}>
-            <Link to="/hobbies" className={(this.state.pageType === 'hobbies') ? "nav-item is-active" : "nav-item"}>{`<HobbiesCorner/>`}</Link>
-            <Link to="/business" className={(this.state.pageType === 'business') ? "nav-item is-active" : "nav-item"}>{`<BusinessStreet/>`}</Link>
+            <Link to="/hobbies" className={(this.state.pageType === 'hobbies') ? "nav-item is-active is-tab" : "nav-item is-tab"}>{`<HobbiesCorner/>`}</Link>
+            <Link to="/business" className={(this.state.pageType === 'business') ? "nav-item is-active is-tab" : "nav-item is-tab"}>{`<BusinessStreet/>`}</Link>
           </div>
         </nav>
       </div>
