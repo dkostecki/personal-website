@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NavBar from './NavBar';
-import '../BulmaFlatly.css';
+import NavBar from '../NavBar';
+import '../../BulmaFlatly.css';
 
 export default class Hero extends Component {
   render() {
@@ -14,7 +14,7 @@ export default class Hero extends Component {
 
         <div className="hero-body">
           <div className="container">
-            <h1 className="title"> Welcome to Deepankar Malhan's Personal Website</h1>
+            <h1 className="title">Welcome to my corner of the Internet</h1>
             <br />
             <h2 className="subtitle">Feel free to look around and find out more about me!
              For general queries (such as asking for my help on a particular topic I discussed somewhere on the Internet), please contact me

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../BulmaFlatly.css';
-import NavBar from './NavBar';
-import HomePageHero from './HomePageHero';
+import HomePageHero from './Heroes/HomePageHero';
 
 export default class Home extends Component {
   render() {
