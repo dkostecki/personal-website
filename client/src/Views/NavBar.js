@@ -9,18 +9,32 @@ export default class NavBar extends Component {
     super (props);
     this.state = {
       pageType: this.props.pageType || 'home',
-      isActive: this.props.isActive || true,
       isMobile: false
     };
   }
 
   render() {
+    // TODO: Fix the Github button
     return (
-      <nav className="nav has-shadow">
-        <div className="container">
+      <div className="container">
+        <nav className="nav has-shadow">
           <div className="nav-left">
+            <Link className={(this.state.pageType === 'home') ? "nav-item is-active": "nav-item"} to="/">{`<Home />`}</Link>
+            <Link className={(this.state.pageType === 'contact') ? "nav-item is-active": "nav-item"} to="/contactme">
+              {`<ContactMe />`}
+            </Link>
+          </div>
+
+          <div className="nav-center">
             <div className="nav-item">
-              <Link to="/" className="title">Home</Link>
+              <a className="button is-success" href="https://github.com/deepankarmalhan/node-personal-website" target="_blank">
+                <span className="icon">
+                  <i className="fa fa-github"/>
+                </span>
+                <span>
+                  Fork
+                </span>
+              </a>
             </div>
           </div>
 
@@ -31,27 +45,11 @@ export default class NavBar extends Component {
           </span>
 
           <div className={(this.state.isMobile) ? 'nav-right nav-menu is-active' : 'nav-right nav-menu'}>
-            <Link className="nav-item" to="/hobbies">
-              Hobbies Corner
-            </Link>
-            <Link className="nav-item" to="/business">
-              Resume | Hire Me
-            </Link>
-            <Link className="nav-item" to="/contactme">
-              Contact Me
-            </Link>
-
-            <span className="nav-item">
-              <a className="button is-dark" href="https://github.com/deepankarmalhan/node-personal-website" target="_blank">
-                <span className="icon">
-                  <i className="fa fa-github"></i>
-                </span>
-                <span>Fork this website</span>
-              </a>
-            </span>
+            <Link to="/hobbies" className={(this.state.pageType === 'hobbies') ? "nav-item is-active" : "nav-item"}>{`<HobbiesCorner/>`}</Link>
+            <Link to="/business" className={(this.state.pageType === 'business') ? "nav-item is-active" : "nav-item"}>{`<BusinessStreet/>`}</Link>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     );
   }
 
