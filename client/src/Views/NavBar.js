@@ -26,7 +26,7 @@ export default class NavBar extends Component {
 
           <div className="nav-center">
             <div className="nav-item">
-              <a className="button is-light is-outlined" href="https://github.com/deepankarmalhan/node-personal-website" target="_blank">
+              <a className="button is-light is-outlined" href="https://github.com/deepankarmalhan/personal-website" target="_blank">
                 <span className="icon">
                   <i className="fa fa-github"/>
                 </span>

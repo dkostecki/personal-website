@@ -8,7 +8,7 @@ export default class ContactMePageHero extends Component {
       <section className="hero is-primary">
         <div className="hero-head">
           <div className="container">
-            <NavBar pageType="contactme" />
+            <NavBar pageType="contact" />
           </div>
         </div>
 
