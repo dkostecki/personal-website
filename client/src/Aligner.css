@@ -1,0 +1,30 @@
+.Aligner-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 12em;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.Aligner-row {
+  display: flex;
+  padding-left: 10%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.Aligner-item {
+  flex: 1;
+}
+
+.Aligner-item--fixed {
+  flex: none;
+  max-width: 50%;
+}
