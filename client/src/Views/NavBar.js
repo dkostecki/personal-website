@@ -20,7 +20,7 @@ export default class NavBar extends Component {
           <div className="nav-left">
             <nav className="level is-mobile">
               <div className="level-item has-text-centered">
-                <Link className="tabs is-large is-centered" to="/"> {`<DeepankarMalhan/>`}</Link>
+                <Link className="tabs is-large is-centered" to="/">Deepankar Malhan</Link>
               </div>
             </nav>
           </div>

@@ -10,21 +10,40 @@ export default class Home extends Component {
         <HomePageHero />
         <div className="Aligner-column">
           <div className="Aligner-item Aligner-item--fixed">
-            <div className="content">
-              <h1 className="title">Connect with me on social media</h1>
+              <center><h1 className="title">Connect with me</h1></center>
+              <hr />
               <div className="Aligner-row">
                 <div className="Aligner-item">
-                <a className="button is-success is-outlined" href="https://github.com/deepankarmalhan/personal-website" target="_blank">
-                  <span className="icon">
-                    <i className="fa fa-github"/>
-                  </span>
-                  <span>
-                    Fork
-                  </span>
-                </a>
+                  <a className="button is-success is-outlined" href="https://github.com/deepankarmalhan/personal-website" target="_blank">
+                    <span className="icon">
+                      <i className="fa fa-github-square"/>
+                    </span>
+                    <span>
+                      Github Profile
+                    </span>
+                  </a>
+                </div>
+                <div className="Aligner-item">
+                  <a className="button is-primary is-outlined" href="https://linkedin.com/in/deepankarmalhan" target="_blank">
+                    <span className="icon">
+                      <i className="fa fa-linkedin-square"/>
+                    </span>
+                    <span>
+                      LinkedIn Profile
+                    </span>
+                  </a>
+                </div>
+                <div className="Aligner-item">
+                  <a className="button is-info is-outlined" href="https://facebook.com/DeepankarMalhan" target="_blank">
+                    <span className="icon">
+                      <i className="fa fa-facebook-square"/>
+                    </span>
+                    <span>
+                      Facebook Profile
+                    </span>
+                  </a>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>

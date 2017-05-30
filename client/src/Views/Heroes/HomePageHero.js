@@ -17,9 +17,9 @@ export default class Hero extends Component {
             <h1 className="title">Welcome!</h1>
             <br />
             <h2 className="subtitle">Feel free to look around and find out more about me!
-             For general queries (such as asking for my help on a particular topic I discussed somewhere on the Internet), please contact me
-              through the navigation bar's label <code>Contact Me</code> For hiring me as a private tutor, looking at my Resume, jobs I've held, etc.
-              proceed to tab labeled <code>Resume | Hire Me</code></h2>
+             For general queries (recommendation on starting in Computer Science, video games and TV shows), please contact me
+              through <code>Contact Me</code> For business related things (my Resume, past jobs and past projects) go to <code>Business</code> tab.
+            </h2>
           </div>
         </div>
       </section>
