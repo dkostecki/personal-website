@@ -4,6 +4,7 @@ import '../Aligner.css';
 import HomePageHero from './Heroes/HomePageHero';
 
 export default class Home extends Component {
+  // TODO: Flexbox not working correctly when the page is re-rendered.
   render() {
     return (
       <div className="homePage">
@@ -14,7 +15,7 @@ export default class Home extends Component {
               <hr />
               <div className="Aligner-row">
                 <div className="Aligner-item">
-                  <a className="button is-success is-outlined" href="https://github.com/deepankarmalhan/personal-website" target="_blank">
+                  <a className="button is-success is-outlined" href="https://github.com/deepankarmalhan" target="_blank">
                     <span className="icon">
                       <i className="fa fa-github-square"/>
                     </span>
