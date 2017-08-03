@@ -35,12 +35,12 @@ export default class NotFound extends Component {
               contentLabel="What's '/dev/null'?"
             >
               <div className="container">
-                <h2 className="subtitle">What is "/dev/null"?</h2>
+                <h2 className="subtitle"><strong>What's <code>/dev/null</code></strong></h2>
                 <hr />
                 <div className="content">
                   <p>
                     Suppose you run a program on the terminal which is very verbose, and you are not interested in reading through
-                    the entirety of the output. That's where <code>/dev/null</code> comes in; it is a special file on *NIX systems
+                    the entirety of the output. That's where <i>/dev/null</i> comes in; it is a special file on *NIX systems
                     which takes in a stream of data and converts it to null. This means that the output of a program could be redirected
                     to that special file and it will not take up additional space on the system, <strong>and not show the output on the terminal!</strong>
                   </p>
