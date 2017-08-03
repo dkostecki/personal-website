@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 
 import './bulma.css';
+import './FontAwesome/css/font-awesome.min.css';
 
 ReactDOM.render(
   <Router>
