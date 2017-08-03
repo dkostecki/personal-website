@@ -19,6 +19,7 @@ Even though the GitHub repo shows up as ~80% css, that's due to a CSS file that 
     - [ ] Video Games
 - [ ] Business
     - [ ] Projects
+    - [ ] Skills
     - [ ] Resumes
 - [ ] Contact Me
     - [ ] Social
