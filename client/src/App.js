@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+
+import HomeBaseComp from './Views/HomeBaseComp.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="container">
-          <div className="box">
-            <div className="content">
-              <p>
-                This is the main page being rendered.
-              </p>
-            </div>
-          </div>
-        </div>
+          <Route exact path={`${this.props.match.url}`} component={HomeBaseComp}/>
       </div>
     );
   }

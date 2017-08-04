@@ -7,7 +7,8 @@ export default class NotFound extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false
+      showModal: false,
+      bgColor: 'white'
     };
   }
 
