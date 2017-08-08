@@ -6,8 +6,6 @@ export default class HomeBodyComp extends Component {
   render() {
     return (
       <div className="container">
-        <div className="columns">
-          <div className="column">
             <h1 className="title has-text-centered">
               WELCOME
             </h1>
@@ -78,8 +76,6 @@ export default class HomeBodyComp extends Component {
               </div>
             </div>
           </div>
-        </div>
-      </div>
     );
   }
 };
