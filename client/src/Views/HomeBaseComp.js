@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Logo from '../Assets/Images/Logo.png';
+import Logo from '../Assets/Images/MyFace_Circular.png';
 import HomeBodyComp from './HomeBodyComp';
 
 export default class HomeBaseComp extends Component {
@@ -9,7 +9,7 @@ export default class HomeBaseComp extends Component {
     return (
       <section className="hero is-fullheight">
 
-        <div className="hero-head">
+        <div className="hero-head"  style={{backgroundColor: '#b3ffb3'}}>
           <header>
             <br />
             <div className="container">
@@ -20,11 +20,13 @@ export default class HomeBaseComp extends Component {
                   </figure>
                 </Link>
               </nav>
+              <center>Deepankar Malhan</center>
+              <br/>
             </div>
           </header>
         </div>
 
-        <div className="hero-body">
+        <div className="hero-body"  style={{backgroundColor: '#cc9966'}}>
             <HomeBodyComp />
         </div>
       </section>
