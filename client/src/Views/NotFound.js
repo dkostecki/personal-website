@@ -26,7 +26,6 @@ export default class NotFound extends Component {
 
   render() {
     return (
-      <div className="hero is-fullheight" style={{text: 'white', backgroundColor: '#08a88a'}}>
         <div className="hero-body">
           <div className="container has-text-centered">
             <img src={Logo} alt="logo"  style={{height:'50%', width:'50%'}}/>
@@ -75,7 +74,6 @@ export default class NotFound extends Component {
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }
