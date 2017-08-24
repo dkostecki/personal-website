@@ -26,7 +26,7 @@ export default class NotFound extends Component {
 
   render() {
     return (
-      <div className="hero is-fullheight">
+      <div className="hero is-fullheight" style={{text: 'white', backgroundColor: '#08a88a'}}>
         <div className="hero-body">
           <div className="container has-text-centered">
             <img src={Logo} alt="logo"  style={{height:'50%', width:'50%'}}/>
@@ -54,12 +54,13 @@ export default class NotFound extends Component {
             <br/>
             <br/>
 
-            <h1 className="title">
+            <h1 className="title" style={{marginBottom: '40px'}}>
               [ERROR 404: Page doesn't exist]
             </h1>
             <h2 className="subtitle">
-              $ echo "Please stop trying to break the website" > <a onClick={this.openModal}>/dev/null</a>
+              <code>$ echo "Please stop trying to break the website" > <a onClick={this.openModal}>/dev/null</a></code>
             </h2>
+            <hr/>
             <div className="field has-addons has-addons-centered">
               <p className="control">
                 <Link className="button is-light is-outlined is-inverted" to="/">

@@ -9,7 +9,7 @@ export default class HomeBaseComp extends Component {
     return (
       <section className="hero is-fullheight">
 
-        <div className="hero-head"  style={{text: 'white', backgroundColor: '#08a88a'}}>
+        <div className="hero-head" style={{text: 'white', backgroundColor: '#08a88a'}}>
           <header>
             <br />
             <div className="container">
