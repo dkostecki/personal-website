@@ -20,7 +20,7 @@ export default class Breadcrumb extends Component {
     return (
       <nav className="breadcrumb has-arrow-separator">
         <ul>
-          <li key="0"><Link to="/">home</Link></li>
+          <li key="0"><Link to="/">Home</Link></li>
           {
             this.state.pathArray.map((path, index) => {
               // Don't want any <li> if its the homepage or for the first index of the tokenized path (because the first one is empty -> '/path' === ['','path'])
@@ -34,7 +34,7 @@ export default class Breadcrumb extends Component {
                 linkVal += `/${this.state.pathArray[i]}`
               }
 
-              return <li key={index+1}><Link to={linkVal}>{path}</Link></li>
+              return <li key={index+1}><Link to={linkVal}>{`${path.substring(0,1).toUpperCase()}${path.substring(1,path.length)}`}</Link></li>
             })
           }
         </ul>
