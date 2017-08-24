@@ -9,25 +9,39 @@ export default class HomeBaseComp extends Component {
     return (
       <section className="hero is-fullheight">
 
-        <div className="hero-head"  style={{backgroundColor: '#b3ffb3'}}>
+        <div className="hero-head"  style={{text: 'white', backgroundColor: '#08a88a'}}>
           <header>
             <br />
             <div className="container">
-              <nav className="level">
-                <Link className= "level-item has-text-centered" to="/">
-                  <figure className="image is-128x128">
-                    <img src={Logo} alt="Cool logo"/>
-                  </figure>
-                </Link>
-              </nav>
-              <center>Deepankar Malhan</center>
+              <div className="columns is-mobile is-centered">
+                <div className="column is-narrow">
+                  <Link className= "level-item has-text-centered" to="/">
+                    <figure className="image is-128x128">
+                      <img src={Logo} alt="Cool logo"/>
+                    </figure>
+                  </Link>
+                </div>
+              </div>
+              <div className="container has-text-centered">
+              <h3 className="subtitle has-text-centered" style={{color: 'white'}}>Deepankar Malhan, a Senior Computer Science major (Honors) @ <a href="https://www.ccsu.edu/">Central Connecticut State University</a></h3>
+              </div>
               <br/>
             </div>
           </header>
         </div>
 
-        <div className="hero-body"  style={{backgroundColor: '#cc9966'}}>
-            <HomeBodyComp />
+        <br/>
+        <div className="container">
+          <nav className="breadcrumb">
+            <ul>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/">Homepage</Link></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div className="hero-body">
+          <HomeBodyComp />
         </div>
       </section>
     );
