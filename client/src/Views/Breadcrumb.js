@@ -25,7 +25,7 @@ export default class Breadcrumb extends Component {
             this.state.pathArray.map((path, index) => {
               // Don't want any <li> if its the homepage or for the first index of the tokenized path (because the first one is empty -> '/path' === ['','path'])
               if(this.state.currentPath === '/' || index === 0) {
-                return;
+                return null;
               }
 
               // Build a string for the current element's link for proper navigation
