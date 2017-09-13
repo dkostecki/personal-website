@@ -20,11 +20,11 @@ export default class HomeBaseComp extends Component {
         <div className="container">
           <div className="columns is-mobile is-centered">
             <div className="column is-narrow">
-              <Link className= "level-item has-text-centered" to="/">
+              <div className= "level-item has-text-centered">
                 <figure className="image is-128x128">
-                  <img src={Logo} alt="Cool logo"/>
+                  <img src={Logo} alt="Cool logo" onClick={() => window.open(Logo)}/>
                 </figure>
-              </Link>
+              </div>
             </div>
           </div>
           <div className="container has-text-centered">

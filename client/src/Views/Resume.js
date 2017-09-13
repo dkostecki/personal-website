@@ -14,7 +14,7 @@ export default class Resume extends Component {
         <section className="section">
             <div className="content">
               This page is my Resume explained in-depth with all the things I couldn't put on a single page of paper. Before we start, download my portable (not in-depth) Resume
-              version <a href={ResumePDF}>here</a>!
+              version <a href={ResumePDF} download="DeepankarMalhanResume.pdf">here</a>!
             </div>
         </section>
 
