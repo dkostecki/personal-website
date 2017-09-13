@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import ReactModal from 'react-modal';
 import Logo from '../Assets/Images/Logo.png';
 
@@ -59,19 +58,6 @@ export default class NotFound extends Component {
             <h2 className="subtitle">
               <code>$ echo "Please stop trying to break the website" > <a onClick={this.openModal}>/dev/null</a></code>
             </h2>
-            <hr/>
-            <div className="field has-addons has-addons-centered">
-              <p className="control">
-                <Link className="button is-light is-outlined is-inverted" to="/">
-                  <span className="icon">
-                    <i className="fa fa-exclamation-triangle"/>
-                  </span>
-                  <span>
-                    Take me back to the Homepage
-                  </span>
-                </Link>
-              </p>
-            </div>
           </div>
         </div>
     );

@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NotFound from './Views/NotFound';
 import registerServiceWorker from './registerServiceWorker';
 import {
   BrowserRouter as Router,
   Route,
-  Switch
 } from 'react-router-dom';
 
 import './bulma.css';

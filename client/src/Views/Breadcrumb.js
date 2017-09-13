@@ -25,6 +25,8 @@ export default class Breadcrumb extends Component {
             this.state.pathArray.map((path, index) => {
               // Don't want any <li> if its the homepage or for the first index of the tokenized path (because the first one is empty -> '/path' === ['','path'])
               if(this.state.currentPath === '/' || index === 0) {
+                // eslint-disable-next-line
+                // Above line because it expects a return value while we don't want to break CSS by returning empty tags
                 return;
               }
 
